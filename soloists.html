@@ -115,427 +115,279 @@
     </section>
 
     <!-- ARTIST LIST -->
-    <section class="py-14 bg-background-dark">
-        <div class="max-w-[1100px] mx-auto px-6 space-y-8" id="artistGrid">
-
-            <!-- Card 1 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute bg-cover bg-top inset-0" style="background-image: url('./imgs/Julia.jpg')"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Julia</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Short description.</p>
+      <section class="py-14 bg-background-dark">
+        <div class="max-w-[1200px] mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-5" id="artistGrid">
+ 
+                <!-- ── VISIBLE 1–10 ─────────────────────────────── -->
+ 
+                <!-- 1. Julia -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Julia</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute bg-cover bg-top inset-0" style="background-image: url('./imgs/Alpar.jpg')"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Alpar</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Stowaway Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Short description.</p>
+ 
+                <!-- 2. Alpar -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Alpar</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Stowaway Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute bg-cover bg-top inset-0" style="background-image: url('./imgs/Thonmas.jpg')"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Thomas</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Short description.</p>
+ 
+                <!-- 3. Thomas -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Thomas</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute bg-cover bg-top inset-0" style="background-image: url('./imgs/Hanna.jpeg')"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Hanna</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Piano Vocalist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Short description.</p>
+ 
+                <!-- 4. Hanna -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Hanna</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Piano Vocalist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#2A5B8F 0%,#1F456E 50%,#A68B5B 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Renato</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Guitar Vocalist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Award-winning soprano whose voice fills concert halls and intimate lounges alike. Sofia's programme ranges from Puccini to musical theatre, always delivered with warmth and precision.</p>
+ 
+                <!-- 5. Renato -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Renato</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Guitar Vocalist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#C9B07E 0%,#8B6F4E 45%,#1F456E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Monika</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Moscow Conservatory graduate and master of Spanish and classical guitar traditions. Dmitri brings an introspective depth that captivates even the most discerning audiences.</p>
+ 
+                <!-- 6. Monika -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Monika</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 7 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#152436 0%,#2A5B8F 55%,#C9B07E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Benny</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">DJ / Sax</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Ethereal soundscapes perfect for formal dinners, cocktail receptions and spa settings. Isabelle's harp creates an atmosphere of effortless luxury that elevates any shipboard event.</p>
+ 
+                <!-- 7. Benny -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Benny</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">DJ / Sax</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 8 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#A68B5B 0%,#1F456E 55%,#C9B07E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Klaudia</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Piano Vocalist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Passionate Andalusian artistry bringing fire and soul to luxury venues. Rafael's performances transport guests to the heart of southern Spain — visceral, dramatic and utterly memorable.</p>
+ 
+                <!-- 8. Klaudia -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Klaudia</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Piano Vocalist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 9 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#2A5B8F 0%,#C9B07E 50%,#152436 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Antal</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Rich, resonant tone with a repertoire spanning Bach to modern cinema scores. Elena's performances offer a rare combination of technical rigour and deep emotional expressiveness.</p>
+ 
+                <!-- 9. Antal -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Antal</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 10 -->
-            <div class="artist-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#1F456E 0%,#A68B5B 50%,#152436 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Vica</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Versatile soloist equally at home in jazz lounges and black-tie galas. Thomas effortlessly navigates from smoky ballads to soaring solos, bringing charisma and polish to every set.</p>
+ 
+                <!-- 10. Vica -->
+                <div class="artist-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Vica</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- ── HIDDEN CARDS 11–15 ─────────────────────────── -->
-
-            <!-- Card 11 -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#8B6F4E 0%,#152436 55%,#C9B07E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Andrew</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Soul & R&B Vocalist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Powerful voice bringing warmth and emotion to every performance. Nadia's rich mezzo tone and natural stage command turn any room into an unforgettable live experience.</p>
+ 
+                <!-- ── HIDDEN 11–24 ─────────────────────────────── -->
+ 
+                <!-- 11. Andrew -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Andrew</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Guitar Vocalist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 12 -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#C9B07E 0%,#2A5B8F 55%,#152436 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Attila</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Virtuosic European folk and classical accordion for themed evenings. Viktor's energy and technical brilliance make him a popular choice for cultural celebration nights.</p>
+ 
+                <!-- 12. Attila -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Attila</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 13 -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#1F456E 0%,#C9B07E 50%,#8B6F4E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Patricia</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Piano Vocalist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Delicate and expressive, her flute brings elegance to any refined setting. Camille's playing is noted for its silken tone and supremely tasteful ornamentation across all periods.</p>
+ 
+                <!-- 13. Patricia -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Patricia</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Piano Vocalist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 14 -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#152436 0%,#A68B5B 50%,#2A5B8F 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Csaba</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Solo Guitarist</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Smooth Brazilian rhythms perfect for pool decks and sunset cocktails. Pedro's understated virtuosity creates an irresistible warmth that instantly puts guests at ease.</p>
+ 
+                <!-- 14. George -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">George</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Card 15 -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#C9B07E 0%,#1F456E 55%,#A68B5B 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Witty</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Koto & Contemporary</p>
-                        <p class="text-slate-400 text-base leading-relaxed">Bridging ancient Japanese tradition with modern composition for truly unique experiences. Yuki's performance offers guests a window into a world of profound musical culture and refinement.</p>
+ 
+                <!-- 15. Norbert -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Norbert</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-
-
-            <!-- Ferenc -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#2A5B8F 0%,#C9B07E 50%,#0B1522 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Ferenc</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 16. Csaba -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Csaba</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Solo Guitarist</p>
                     </div>
                 </div>
-            </div>
-            <!-- Petar -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#C9B07E 0%,#152436 50%,#1F456E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Petar</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 17. Izabella -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Izabella</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-            <!-- George -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#8B6F4E 0%,#2A5B8F 55%,#0B1522 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">George</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 18. Witty -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Witty</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Piano Bar Entertainer</p>
                     </div>
                 </div>
-            </div>
-            <!-- Gyula -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#1F456E 0%,#A68B5B 50%,#152436 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Gyula</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 19. Gabor -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Gabor</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Guitar Vocalist</p>
                     </div>
                 </div>
-            </div>
-            <!-- Norbert -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#A68B5B 0%,#1F456E 50%,#C9B07E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Norbert</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 20. Petar -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Petar</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-            <!-- Izabella -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#152436 0%,#C9B07E 45%,#2A5B8F 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Izabella</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 21. Ferenc -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Ferenc</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-            <!-- Richard -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#C9B07E 0%,#8B6F4E 40%,#1F456E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Richard</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Cocktail Pianist</p>
+ 
+                <!-- 22. Richard -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Richard</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-            <!-- Gabor -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#2A5B8F 0%,#A68B5B 55%,#0B1522 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Gabor</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Guitar Vocalist</p>
+ 
+                <!-- 23. Gyula -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Gyula</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Cocktail Pianist</p>
                     </div>
                 </div>
-            </div>
-            <!-- Laszlo -->
-            <div class="artist-card hidden-card group bg-background-card rounded-2xl overflow-hidden border border-white/5 hover:border-accent/50 smooth-hover hover:-translate-y-1 hover:shadow-2xl">
-                <div class="grid md:grid-cols-5 gap-0">
-                    <div class="md:col-span-2 relative h-64 md:h-auto overflow-hidden">
-                        <div class="absolute inset-0" style="background:linear-gradient(135deg,#8B6F4E 0%,#1F456E 50%,#C9B07E 100%)"></div>
-                        <div class="gradient-overlay absolute inset-0 bg-background-dark/20"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg fill="#fff" width="72" height="72" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" opacity="0.35"><path d="M17.5,24.9a7.326,7.326,0,0,1-7.318-7.318V7.568a7.318,7.318,0,0,1,14.636,0V17.577A7.326,7.326,0,0,1,17.5,24.9Zm0-22.145a4.823,4.823,0,0,0-4.818,4.818V17.577a4.818,4.818,0,1,0,9.636,0V7.568A4.823,4.823,0,0,0,17.5,2.75Z"/><path d="M17.5,34.75a1.25,1.25,0,0,1-1.25-1.25V30.582a1.25,1.25,0,0,1,2.5,0V33.5A1.249,1.249,0,0,1,17.5,34.75Z"/><path d="M17.5,30.7A12.361,12.361,0,0,1,5.153,18.355V13.1A1.25,1.25,0,0,1,6.4,11.85h5.029a1.25,1.25,0,0,1,0,2.5H7.653v4.005a9.847,9.847,0,0,0,19.694,0,1.25,1.25,0,1,1,2.5,0A12.361,12.361,0,0,1,17.5,30.7Z"/></svg>
-                        </div>
-                    </div>
-                    <div class="md:col-span-3 p-8 md:p-10 flex flex-col justify-center">
-                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-1 font-serif group-hover:text-accent smooth-hover">Laszlo</h2>
-                        <p class="text-accent text-sm font-semibold uppercase tracking-wider mb-4">Guitar Vocalist</p>
+ 
+                <!-- 24. Laszlo -->
+                <div class="artist-card hidden-card">
+                    <div class="absolute inset-0" style="background:linear-gradient(160deg,#1F456E 0%,#2A5B8F 40%,#A68B5B 75%,#0B1522 100%)"></div>
+                    <div class="card-topline"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-panel">
+                        <h2 class="text-white text-lg font-bold leading-tight mb-1">Laszlo</h2>
+                        <p class="card-occupation text-[#C9B07E] text-xs font-semibold uppercase tracking-widest">Guitar Vocalist</p>
                     </div>
                 </div>
-            </div>
-
+ 
+            </div><!-- /grid -->
 
         <!-- TOGGLE BUTTON -->
         <div class="flex justify-center mt-12">
